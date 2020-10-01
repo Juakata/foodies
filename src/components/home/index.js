@@ -3,7 +3,6 @@ import Welcome from '../shared/welcome';
 import About from './about';
 import Locations from './locations';
 import Hamburger from '../../assets/main/hamburger.png';
-import './style.scss';
 
 const Home = () => (
   <>
