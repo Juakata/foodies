@@ -1,0 +1,66 @@
+.hamburger-1 {
+  background-image: url('../../../assets/backgrounds/shape.svg');
+}
+
+.welcome {
+  padding-top: 90px;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+
+  .flex-1 {
+    width: 50%;
+    padding-left: 5%;
+
+    h1 {
+      span {
+        font-size: 6vw;
+      }
+    }
+
+    p {
+      margin: 30px 0;
+    }
+  }
+
+  .flex-2 {
+    width: 50%;
+    text-align: center;
+
+    img {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome {
+    flex-direction: column-reverse;
+    background-size: 70%;
+    justify-content: center;
+
+    .flex-1 {
+      width: 100%;
+      padding-right: 5%;
+
+      h1 {
+        font-size: 12vw;
+        span {
+          font-size: 12vw;
+        }
+      }
+    }
+
+    .flex-2 {
+      width: 100%;
+      padding-right: 5%;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+}
