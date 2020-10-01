@@ -2,6 +2,7 @@ import React from 'react';
 import Welcome from '../shared/welcome';
 import About from './about';
 import Locations from './locations';
+import BestPlace from './bestplace';
 import Hamburger from '../../assets/main/hamburger.png';
 
 const Home = () => (
@@ -16,6 +17,7 @@ const Home = () => (
     />
     <About />
     <Locations />
+    <BestPlace />
   </>
 );
 
