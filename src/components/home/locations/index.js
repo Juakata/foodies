@@ -29,7 +29,7 @@ class Locations extends React.Component {
           location: { lat: latitude, lng: longitude },
         });
       })
-      .catch(error => this.setState({ error }))
+      .catch(error => this.setState({ error }));
   }
 
   handleSucursales = location => {

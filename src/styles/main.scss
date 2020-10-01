@@ -66,3 +66,14 @@ h4 {
 .yellow {
   color: $yellow;
 }
+
+.yellow-btn {
+  background-color: $yellow;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken($yellow, 15%);
+  }
+}

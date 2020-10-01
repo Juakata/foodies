@@ -1,13 +1,12 @@
 .best-place {
-  padding: 0 25%;
+  padding: 200px 25%;
   margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 750px;
   position: relative;
-  overflow: hidden;
+
 
   @mixin img-properties {
     position: absolute;
