@@ -1,5 +1,6 @@
 import React from 'react';
 import Welcome from '../shared/welcome';
+import Products from './products';
 import Hamburger2 from '../../assets/main/hamburger2.png';
 
 const Menu = () => (
@@ -12,6 +13,7 @@ const Menu = () => (
       backgroundClass="hamburger-2"
       findUs={false}
     />
+    <Products />
   </>
 );
 

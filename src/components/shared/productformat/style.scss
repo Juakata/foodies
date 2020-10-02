@@ -1,0 +1,31 @@
+.product-format {
+  &:hover {
+    transform-origin: center;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px grey;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .info-container {
+    padding: 5%;
+
+    p {
+      margin: 40px 0;
+    }
+
+    .flex-btw {
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        background-color: var(--yellow);
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+    }
+  }
+}
