@@ -19,7 +19,6 @@ git clone https://github.com/Juakata/foodies.git
 ```
 npm install
 ```
-```
 3. To open the project, run:
 ```
 npm start
