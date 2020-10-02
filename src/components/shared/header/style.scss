@@ -53,7 +53,6 @@
       transition: clip-path 0.5s linear;
       position: absolute;
       background: white;
-      padding-left: 5%;
       width: 100%;
       top: 0;
       left: 0;
@@ -65,9 +64,14 @@
       li {
         a {
           color: black;
-          padding: 10px 10px 10px 0;
+          padding: 10px 10px 10px 5%;
           width: 100%;
           display: block;
+          border-bottom-right-radius: 40px;
+
+          &:hover {
+            background: var(--light-yellow);
+          }
         }
       }
     }

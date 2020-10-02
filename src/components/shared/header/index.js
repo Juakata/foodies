@@ -76,6 +76,7 @@ const Header = () => {
           <ul className="mobile-ul" ref={ul}>
             <li><Link to="/acerca">Acerca de</Link></li>
             <li><Link to="/restaurantes">Restaurantes</Link></li>
+            <li><Link to="/menu">Menu</Link></li>
             <li><Link to="/contactanos">Contáctanos</Link></li>
           </ul>
         </header>
@@ -96,17 +97,17 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link className="li-a red-btn" to="/contact">
+            <Link to="/restaurantes" className="li-a red-btn">
               Restaurantes
             </Link>
           </li>
           <li>
-            <Link className="li-a red-btn" to="/contact">
+            <Link to="/menu" className="li-a red-btn">
               Menú
             </Link>
           </li>
           <li>
-            <Link className="li-a red-btn" to="/contact">
+            <Link to="/contact" className="li-a red-btn">
               Contáctanos
             </Link>
           </li>
