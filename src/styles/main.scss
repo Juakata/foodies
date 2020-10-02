@@ -1,8 +1,7 @@
 @import "variables";
 
-body,
-#root {
-  overflow-x: hidden;
+body {
+  background-color: var(--grey);
 }
 
 * {
