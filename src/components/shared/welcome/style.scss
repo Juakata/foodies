@@ -2,6 +2,20 @@
   background-image: url('../../../assets/backgrounds/shape.svg');
 }
 
+.hamburger-2 {
+  background-image: url('../../../assets/backgrounds/shape2.svg');
+  background-color: black;
+
+  .flex-1 {
+    h1 {
+      color: white;
+      span {
+        color: black;
+      }
+    }
+  }
+}
+
 .welcome {
   padding-top: 90px;
   min-height: 100vh;

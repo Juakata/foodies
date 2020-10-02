@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Menu from '../../../assets/icons/menu.svg';
 import Close from '../../../assets/icons/close.svg';
 import './style.scss';
@@ -9,6 +9,7 @@ const Header = () => {
   const [menuOpened, setmenuOpened] = useState(false);
   const [menuIcon, setMenuIcon] = useState(Menu);
   const ul = useRef(null);
+  const location = useLocation().pathname;
 
   const onMenuClick = () => {
     if (menuOpened) {
@@ -61,7 +62,7 @@ const Header = () => {
   function RenderHeader() {
     if (width <= '750') {
       return (
-        <header className="header">
+        <header className={`header ${location === 'menu' ? 'white' : ''}`}>
           <Link id="main-link" to="/">Foodies</Link>
           <button
             onBlur={onMenuBlur}
@@ -84,7 +85,7 @@ const Header = () => {
     }
 
     return (
-      <header className='header'>
+      <header className={`${location === '/menu' ? 'header white' : 'header'}`}>
         <ul className="desktop-ul">
           <li>
             <Link id="main-link" to="/" className="li-a">
@@ -94,21 +95,25 @@ const Header = () => {
           <li>
             <Link to="/acerca" className="li-a">
               Acerca de
+              <span className={`${location === '/acerca' ? 'active' : 'inactive'}`} />
             </Link>
           </li>
           <li>
             <Link to="/restaurantes" className="li-a red-btn">
               Restaurantes
+              <span className={`${location === '/restaurantes' ? 'active' : 'inactive'}`} />
             </Link>
           </li>
           <li>
             <Link to="/menu" className="li-a red-btn">
               Menú
+              <span className={`${location === '/menu' ? 'active' : 'inactive'}`} />
             </Link>
           </li>
           <li>
             <Link to="/contact" className="li-a red-btn">
               Contáctanos
+              <span className={`${location === '/contact' ? 'active' : 'inactive'}`} />
             </Link>
           </li>
         </ul>
