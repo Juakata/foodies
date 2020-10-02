@@ -1,6 +1,46 @@
 .products {
   padding: 40px 5%;
 
+  .flex-btw-cont {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    form {
+      position: relative;
+      width: 40%;
+
+      img {
+        position: absolute;
+        left: 50px;
+        bottom: 25%;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px 80px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        background: transparent;
+      }
+    }
+
+    ul {
+      display: flex;
+      width: 60%;
+
+     li {
+       cursor: pointer;
+       margin-left: 30px;
+     }
+
+     .active {
+       background: linear-gradient(to bottom, transparent 30%, var(--yellow) 30%, var(--yellow) 70%, transparent 70%);
+     }
+    }
+  }
+
   .grid-menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -10,6 +50,20 @@
 
 @media (max-width: 1100px) {
   .products {
+    .flex-btw-cont {
+      flex-direction: column;
+
+      form {
+        width: 88%;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 0;
+        width: 100%;
+      }
+    }
     .grid-menu {
       grid-template-columns: repeat(2, 1fr);
     }
