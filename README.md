@@ -4,6 +4,9 @@
 
 ![Screenshot from 2020-10-02 16-16-41](https://user-images.githubusercontent.com/11781597/94974132-dcd84d00-04ca-11eb-9ec8-a8b4d848f85b.png)
 
+## Live Demo
+
+[Live Demo Link](https://foodiess.netlify.app/)
 
 ## Built With
 
